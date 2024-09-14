@@ -2,7 +2,6 @@ import React, { ChangeEvent } from 'react';
 import styles from './Input.module.scss';
 
 interface InputProps {
-  label?: string;
   value: string;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
@@ -11,7 +10,6 @@ interface InputProps {
 }
 
 const Input: React.FC<InputProps> = ({
-  label,
   value,
   onChange,
   placeholder,
@@ -20,7 +18,6 @@ const Input: React.FC<InputProps> = ({
 }) => {
   return (
     <div className={`${styles.inputWrapper} ${className || ''}`}>
-      {label && <label className={styles.inputLabel}>{label}</label>}
       <input
         type={type}
         value={value}
