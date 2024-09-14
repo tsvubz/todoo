@@ -1,6 +1,6 @@
 import { TitleType, FontWeight } from '../../../shared/styles/styles';
 import { CSSProperties, ReactNode } from 'react';
-import styles from './Heading.module.scss';
+import styles from './Title.module.scss';
 
 interface TitleProps {
   variant: TitleType;
